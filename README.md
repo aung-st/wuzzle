@@ -1,0 +1,2 @@
+# wuzzle
+Solve the puzzle! 
