@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+.start_button{
+    cursor: pointer;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    font: bold 10pt sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    border-width: 1rem;
+    background-image: linear-gradient(315deg, #0d754a 0%, #05441d 74%);
+}
+
+.start_button:hover{
+    background: white;
+    color: #4dcc82;
+}
