@@ -18,6 +18,7 @@ p{
 
 .home-top{
     text-align: center;
+    padding-bottom: 15rem;
 }
 
 .home-middle{
@@ -25,14 +26,12 @@ p{
     width: 30%;
     text-align: center;
     margin: 0 auto;
-    transform: translateY(100%); 
     padding-bottom: 1rem;
 }
 
 
 .home-bottom{
     text-align: center;
-    transform: translateY(700%); 
 }
 
 .start-button{
