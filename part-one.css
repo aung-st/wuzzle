@@ -20,12 +20,16 @@ ul li label{
     color: white;
     font: sans-serif;
     cursor: pointer;
+    display: block;
 }
 
 ul li:hover label{
 	color: #89ffca;
 }
 
+input[type="radio"] {
+    appearance: none;
+}
 input[type=radio]:checked {
     color: #0DFF92;
 }
