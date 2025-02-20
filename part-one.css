@@ -16,6 +16,11 @@ p{
     font: sans-serif;
 }
 
+label{
+    color: white;
+    font: sans-serif;
+}
+
 .home-top{
     text-align: center;
     padding-bottom: 15rem;
