@@ -12,16 +12,23 @@
         </div>
         <div class = "part-one-middle">
             <form>
-                <input type="radio" name="answer" value="answer1">
-                <label>Just because</label><br>
 
-                <input type="radio" name="answer" value="answer2">
-                <label>I don't know</label><br>
-
-                <input type="radio" name="answer" value="answer3">
-                <label>Shut up I am not good at naming things!</label><br>
+                <ul>
+                    <li>
+                        <input type="radio" id = "answer1" name="answer" value="answer1">
+                        <label for = "answer1">Just because</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id = "answer2" name="answer" value="answer2">
+                        <label for = "answer2">I don't know</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id = "answer3" name="answer" value="answer3">
+                        <label for = "answer3">Shut up I am not good at naming things!</label><br>
+                    </li>    
+                </ul>
             </form>
-            <button onclick="getRadioValue()">Submit</button>
+            <button class = "submit-button" onclick="getRadioValue()">Submit</button>
 
         </div>
     </body>
