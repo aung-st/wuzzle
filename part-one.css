@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+hr{
+    border: 0.1rem solid #05441d;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;    
+    font: sans-serif;
+}
+
+p{
+    color: white;
+    font: sans-serif;
+}
+
+.home-top{
+    text-align: center;
+    padding-bottom: 15rem;
+}
