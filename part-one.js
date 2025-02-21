@@ -1,5 +1,6 @@
 let count = [0,0,0];
 let lastChoice;
+let solved = false;
 
 function getRadioValue(){
     let answer = document.getElementsByName('answer');
@@ -29,25 +30,25 @@ function trackAnswers(){
     if (count[1] == 1){
         alert("You can try a bit harder than that!");
     }   
-        // user selects "Just Because" and part one is complete
-        else if (lastChoice ==1 && count[1] >= 5){
-            alert("Okay you can stop trying to answer the question now...");
-        }
-        // user finishes part one
-        else if (count[1] == 5){
-            alert("Look over there! A secret button!");
-        }
-        // user selects "Bad at naming" after finishing part one
-        else if (count[1] > 5){
+
+        // user submits an answer after completeing part one
+        else if (solved){
             alert("Okay you can stop trying to answer the question now...");
         }
 
+        // user completes part one
+        else if (count[1] == 5){
+            alert("Look over there! A secret button!");
+            solved = true;
+        }
+
         // user selects "Just because" and hasn't completed part one yet
-        else if (lastChoice == 1){
+        else if (lastChoice == 1 && count[1] <5){
             alert("I mean yes but no... try again!");
         }
-        // user selects "Bad at naming"
-        else if (lastChoice == 3){
+
+        // user selects "Bad at naming" and hasn't completed part one yet
+        else if (lastChoice == 3  && count[1] <5){
             alert("Shut up I am not good at naming things!");
         }
     
