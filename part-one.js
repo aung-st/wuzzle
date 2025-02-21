@@ -60,3 +60,7 @@ function trackAnswers(){
 function showNextButton(){
     document.getElementById("next-button").style.visibility="visible";   
 }
+
+function goToNextPage(){
+    window.location.href = ("part-two.html");
+}
