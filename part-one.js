@@ -17,7 +17,6 @@ function getRadioValue(){
             // User picks an option between 1-3 from top down of radio buttons
             lastChoice = i+1
             
-            console.log(answer_value,count,lastChoice);
         }
     }
 }
@@ -27,7 +26,7 @@ function trackAnswers(){
     getRadioValue();
     
     // user selects "I don't know" for the first time
-    if (count[1] == 1){
+    if (count[1] == 1 && lastChoice==2){
         alert("You can try a bit harder than that!");
     }   
 
