@@ -1,4 +1,6 @@
+// track each count of total presses of each radio button with array
 let count = [0,0,0];
+// last radio button choice that was submitted
 let lastChoice;
 let solved = false;
 
