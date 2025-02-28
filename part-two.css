@@ -17,25 +17,81 @@ p{
 }
 
 .dial-pad {
-    display: block;
-    width: 60vh;
-    height: 60vh;
+    display: flex;
+    width: 50vh;
+    height: 50vh;
     display: grid;
     grid-template-rows: 1fr, 1fr, 1fr, 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
   }
 
+.dial-pad-button{
+    background-color: #05441d;
+    border: hidden;
+}
+
+.dial-pad-button:hover{
+    background-color: aliceblue;
+}
+
+.reset-button{
+    cursor: pointer;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-spacing: 10px;
+    position: relative;
+    border-radius: 3rem;
+    font: bold 10pt sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    border-width: 1rem;
+    background-image: linear-gradient(315deg, #0d754a 0%, #05441d 74%);
+}
+
+.reset-button:hover{
+    background: aliceblue;
+    color: linear-gradient(315deg, #0d754a 0%, #05441d 74%);
+}
+
+.next-button{
+    cursor: pointer;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-spacing: 10px;
+    position: relative;
+    border-radius: 3rem;
+    font: bold 10pt sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    border-width: 1rem;
+    background-image: linear-gradient(315deg, #0d754a 0%, #05441d 74%);
+    visibility: hidden;
+}
+
+.next-button:hover{
+    background: aliceblue;
+    color: linear-gradient(315deg, #0d754a 0%, #05441d 74%);
+}
+
 .part-two-top{
     text-align: center;
-    padding-bottom: 15rem;
+    padding-bottom: 1rem;
 }
 
-.part-two-middle{
+.part-two-pads{
     text-align: center;
-    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
+.part-two-reset{
+    text-align: center;
+    padding-top: 1rem;
+}
 .part-two-bottom{
+    padding-top: 1rem;
     text-align: center;
 }
+
