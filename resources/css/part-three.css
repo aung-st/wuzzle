@@ -65,13 +65,19 @@ p{
     padding-bottom: 1rem;
 }
 
+.submission-response-container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal-button-container{
     text-align: center;
     justify-content: center;
     align-items: center;
     display: grid;
     gap: 1rem;
-    padding-top: 10rem;
+    padding-top: 1rem;
     grid-row: auto auto;
     grid-template-columns: auto auto;
 }
@@ -106,7 +112,7 @@ input:focus {
     border-color: lightgreen;
 }
 
-.modal-overlay {
+.modal-overlay-1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -125,7 +131,33 @@ input:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background:  rgba(26, 108, 167, 0.5);
+    background:  none;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.modal-overlay-3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  none;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.modal-overlay-4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  none;
     display: grid;
     place-items: center;
     visibility: hidden;
@@ -208,12 +240,27 @@ input:focus {
     color: linear-gradient(315deg, #0d754a 0%, #05441d 74%);
 }
 
-.open-modal {
+.open-modal-1 {
     visibility: visible;
     z-index: 10;
 }
 
-.close-button {
+.open-modal-2 {
+    visibility: visible;
+    z-index: 10;
+}
+
+.open-modal-3 {
+    visibility: visible;
+    z-index: 10;
+}
+
+.open-modal-4 {
+    visibility: visible;
+    z-index: 10;
+}
+
+.close-button-1 {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -224,7 +271,55 @@ input:focus {
     cursor: pointer;
   }
 
-.close-button:hover {
+.close-button-1:hover {
+    color: lightcoral;
+    transform: scale(1.3);
+}
+
+.close-button-2 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: darkred;
+    cursor: pointer;
+  }
+
+.close-button-2:hover {
+    color: lightcoral;
+    transform: scale(1.3);
+}
+
+.close-button-3 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: darkred;
+    cursor: pointer;
+  }
+
+.close-button-3:hover {
+    color: lightcoral;
+    transform: scale(1.3);
+}
+
+.close-button-4 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: darkred;
+    cursor: pointer;
+  }
+
+.close-button-4:hover {
     color: lightcoral;
     transform: scale(1.3);
 }
@@ -240,4 +335,8 @@ input:focus {
     display: grid;
     place-items: center;
     position: relative;
+}
+
+#answer-response{
+    visibility: hidden;
 }
