@@ -13,18 +13,24 @@
             <form>
 
                 <ul>
-                    <li>
-                        <input type="radio" id = "answer1" name="answer" value="answer1">
-                        <label for = "answer1">Just because</label><br>
-                    </li>
+                    <div class = "item">
+                        <li>
+                            <input type="radio" id = "answer1" name="answer" value="answer1">
+                            <label for = "answer1">Just because</label><br>
+                        </li>
+                    </div>
+                    <div class = "item">
                     <li>
                         <input type="radio" id = "answer2" name="answer" value="answer2">
                         <label for = "answer2">I don't know</label><br>
                     </li>
+                    </div>
+                    <div class = "item">
                     <li>
                         <input type="radio" id = "answer3" name="answer" value="answer3">
                         <label for = "answer3">Bad at naming</label><br>
                     </li>    
+                    </div>
                 </ul>
             </form>
             <button class = "submit-button" onclick="trackAnswers()">Submit</button>
