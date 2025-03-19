@@ -56,6 +56,16 @@ p{
     color: linear-gradient(315deg, #0d754a 0%, #05441d 74%);
 }
 
-.part-three-top{
+.part-four-top{
     text-align: center;
+}
+
+.part-four-bottom{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+span{
+    font-size: 8rem;
+	color: #414f6b;
 }
