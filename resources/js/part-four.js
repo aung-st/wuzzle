@@ -52,6 +52,7 @@ function checkDial4(){
 }
 
 dial1.addEventListener("click", function(){
+    ping.currentTime = 0;
     const digit = parseInt(document.getElementById("digit-one").innerHTML); 
     const newDigit = digit+1;
     combination[0] = newDigit;
@@ -64,6 +65,7 @@ dial1.addEventListener("click", function(){
 });
 
 dial2.addEventListener("click", function(){
+    ping.currentTime = 0;
 
     const digit = parseInt(document.getElementById("digit-two").innerHTML) 
     const newDigit = digit+1;
@@ -78,6 +80,7 @@ dial2.addEventListener("click", function(){
 });
 
 dial3.addEventListener("click", function(){
+    ping.currentTime = 0;
 
     const digit = parseInt(document.getElementById("digit-three").innerHTML) 
     const newDigit = digit+1;
@@ -92,6 +95,7 @@ dial3.addEventListener("click", function(){
 });
 
 dial4.addEventListener("click", function(){
+    ping.currentTime = 0;
 
     const digit = parseInt(document.getElementById("digit-four").innerHTML) 
     const newDigit = digit+1;
