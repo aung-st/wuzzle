@@ -24,6 +24,9 @@ function checkCombination(){
 }
 
 function checkDial1(){
+    ping.pause();
+    ping.currentTime = 0;
+
     if (combination[0] == answer[0]){
         ping.play();
         checkCombination();
@@ -31,6 +34,9 @@ function checkDial1(){
 }
 
 function checkDial2(){
+    ping.pause();
+    ping.currentTime = 0;
+
     if (combination[1] == answer[1]){
         ping.play();
         checkCombination();
@@ -38,6 +44,9 @@ function checkDial2(){
 }
 
 function checkDial3(){
+    ping.pause();
+    ping.currentTime = 0;
+
     if (combination[2] == answer[2]){
         ping.play();
         checkCombination();
@@ -45,6 +54,9 @@ function checkDial3(){
 }
 
 function checkDial4(){
+    ping.pause();
+    ping.currentTime = 0;
+
     if (combination[3] == answer[3]){
         ping.play();
         checkCombination();
@@ -52,7 +64,7 @@ function checkDial4(){
 }
 
 dial1.addEventListener("click", function(){
-    ping.currentTime = 0;
+
     const digit = parseInt(document.getElementById("digit-one").innerHTML); 
     const newDigit = digit+1;
     combination[0] = newDigit;
@@ -65,7 +77,6 @@ dial1.addEventListener("click", function(){
 });
 
 dial2.addEventListener("click", function(){
-    ping.currentTime = 0;
 
     const digit = parseInt(document.getElementById("digit-two").innerHTML) 
     const newDigit = digit+1;
@@ -80,7 +91,6 @@ dial2.addEventListener("click", function(){
 });
 
 dial3.addEventListener("click", function(){
-    ping.currentTime = 0;
 
     const digit = parseInt(document.getElementById("digit-three").innerHTML) 
     const newDigit = digit+1;
@@ -95,7 +105,6 @@ dial3.addEventListener("click", function(){
 });
 
 dial4.addEventListener("click", function(){
-    ping.currentTime = 0;
 
     const digit = parseInt(document.getElementById("digit-four").innerHTML) 
     const newDigit = digit+1;
