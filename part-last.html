@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wuzzle</title>
+        <link rel = "stylesheet" href = "resources/css/part-last.css"/>
+    </head>
+    <body>
+        <div class = "part-last-top">
+            <h1>And your final task...<br>Press this button 100 times please!</h1>
+            <hr>
+        </div>
+        <div class="face-container">
+            <div class="face">
+                <div class="eye" onclick = "secretCountCheck()"></div>
+                <div class="eye right" onclick = "secretCountCheck()"></div>
+                <div class="mouth happy"></div>
+            </div>
+        </div>
+        <div class = "part-last-middle">
+            <button class = "tedious-button" onclick="checkCount()">
+                <span>🎉</span>
+                <span id = "button-text">Press</span>
+            </button>
+        </div>
+        <div class = "part-last-bottom">
+            <button class = "next-button" id ="next-button" onclick = "goToNextPage()">Lets Go!!!!</button>
+        </div>
+        <script src = "resources/js/part-last.js"></script>
+    </body>
+</html>

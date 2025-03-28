@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+}
+
+hr{
+    border: 0.1rem solid #05441d;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;    
+    font: sans-serif;
+}
+
+p{
+    color: white;
+    font: sans-serif;
+}
+
+
+
+.tedious-button {
+    background-color: #404663;
+    color: #fff;
+    border: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0.5em 1.25em;
+    border-radius: 0.5em;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    gap: 0.5em;
+    box-shadow:
+      0px 1.7px 2.2px rgba(0, 0, 0, 0.02),
+      0px 4px 5.3px rgba(0, 0, 0, 0.028),
+      0px 7.5px 10px rgba(0, 0, 0, 0.035),
+      0px 13.4px 17.9px rgba(0, 0, 0, 0.042),
+      0px 25.1px 33.4px rgba(0, 0, 0, 0.05),
+      0px 60px 80px rgba(0, 0, 0, 0.07);
+}
+  
+.tedious-button:active {
+    transform: scale(1.01);
+}
+
+.part-last-middle{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.next-button{
+    cursor: pointer;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-spacing: 1rem;
+    position: relative;
+    border-radius: 3rem;
+    font: bold 10pt sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    border-width: 1rem;
+    background-image: linear-gradient(315deg, #0d754a 0%, #05441d 74%);
+    visibility: hidden;
+}
+
+.face-container {
+    padding-top: 20rem;
+}
+
+.face{
+    position: absolute;
+    width: 15%;
+    height: 22%;
+    background: yellow;
+    border-radius: 50%;
+    border: 0.5rem solid darkgreen;
+    top: 21%;
+    left: 40.5%;
+    animation: bounce 1s ease-in infinite;
+}
+
+.eye {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background: darkgreen;
+    border-radius: 50%;
+    top: 30%;
+    left: 20%;
+  }
+  
+.right {
+    left: 68%;
+}
+
+.mouth {
+    position:absolute;
+    top: 35%;
+    left: 36%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+  
+.happy {
+    border: 0.5rem solid;
+    border-color: transparent darkgreen darkgreen transparent;
+    transform: rotate(45deg);
+}
+
+  
+.next-button:hover{
+    background: aliceblue;
+    color: linear-gradient(315deg, #0d754a 0%, #05441d 74%);
+}
+
+.part-last-top{
+    text-align: center;
+}
+
+.part-last-bottom{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+span{
+    font-size: 3rem;
+	color: #414f6b;
+}
