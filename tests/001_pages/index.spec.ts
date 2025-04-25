@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import { setTimeout as sleep } from "node:timers/promises";
 
 test("has title", async ({ page,baseURL }) => {
 
