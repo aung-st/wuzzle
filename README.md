@@ -1,4 +1,5 @@
-# wuzzle
-Solve the puzzle! 
+# Wuzzle
+A work appropriate set of puzzles to solve to pass the time
 
-Just start from index.html to get started! 
+# Commands
+npx playwright test -> Run all test cases
