@@ -12,10 +12,15 @@ test("walkthrough", async ({ page,baseURL }) => {
   await page.locator("div.item:nth-child(2) > li:nth-child(1) > label:nth-child(2)").check();
   // note: there will not be any alert showing in the head so we are just clicking the submit button instead
   await page.getByRole('button', { name: /Submit/i }).click();
+  await sleep(1000);
   await page.getByRole('button', { name: /Submit/i }).click();
+  await sleep(1000);
   await page.getByRole('button', { name: /Submit/i }).click();
+  await sleep(1000);
   await page.getByRole('button', { name: /Submit/i }).click();
+  await sleep(1000);
   await page.getByRole('button', { name: /Submit/i }).click();
+  await sleep(1000);
   await page.getByRole('button', { name: /Next Part/i }).click();
 
   // part 2
@@ -37,7 +42,9 @@ test("walkthrough", async ({ page,baseURL }) => {
 
   // part 3
   await expect(page.locator(".modal-button-1")).toBeVisible();
+  await sleep(1000);
   await page.locator(".modal-button-1").click();
+  await sleep(1000);
 
   await expect(page.locator(".close-button-1 > i:nth-child(1)")).toBeVisible();
   await page.locator(".close-button-1 > i:nth-child(1)").click();
@@ -56,7 +63,7 @@ test("walkthrough", async ({ page,baseURL }) => {
   await page.locator("#dial-one").click();
   await page.locator("#dial-one").click();
   await page.locator("#dial-one").click();
-  await sleep(2000);
+  await sleep(1000);
 
 
   await expect(page.locator("#dial-two")).toBeVisible();
@@ -67,7 +74,7 @@ test("walkthrough", async ({ page,baseURL }) => {
   await page.locator("#dial-two").click();
   await page.locator("#dial-two").click();
   await page.locator("#dial-two").click();
-  await sleep(2000);
+  await sleep(1000);
 
   await expect(page.locator("#dial-three")).toBeVisible();
   await page.locator("#dial-three").click();
@@ -75,27 +82,36 @@ test("walkthrough", async ({ page,baseURL }) => {
   await page.locator("#dial-three").click();
   await page.locator("#dial-three").click();
   await page.locator("#dial-three").click();
-  await sleep(2000);
+  await sleep(1000);
 
   await expect(page.locator("#dial-four")).toBeVisible();
   await page.locator("#dial-four").click();
   await page.locator("#dial-four").click();
-  await sleep(2000);
+  await sleep(1000);
   await page.getByRole('button', { name: /Next Part/i }).click();
 
   // part last
   await expect(page.locator("div.eye:nth-child(1)")).toBeVisible();
   await page.locator("div.eye:nth-child(1)").click();
+  await sleep(500);
   await page.locator("div.eye:nth-child(1)").click();
+  await sleep(500);
   await page.locator("div.eye:nth-child(1)").click();
+  await sleep(500);
   await page.locator("div.eye:nth-child(1)").click();
+  await sleep(500);
   await page.locator("div.eye:nth-child(1)").click();
+  await sleep(500);
   await page.locator("div.eye:nth-child(1)").click();
+  await sleep(500);
   await page.locator("div.eye:nth-child(1)").click();
+  await sleep(500);
   await page.locator("div.eye:nth-child(1)").click();
+  await sleep(500);
   await page.locator("div.eye:nth-child(1)").click();
+  await sleep(500);
   await page.locator("div.eye:nth-child(1)").click();
-
+  await sleep(1000);
 
   await page.locator("#next-button").click();
   await sleep(3000);
