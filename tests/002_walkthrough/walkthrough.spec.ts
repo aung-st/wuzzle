@@ -19,5 +19,21 @@ test("walkthrough", async ({ page,baseURL }) => {
   await page.getByRole('button', { name: /Next Part/i }).click();
 
   // part 2
+  await expect(page.locator("button.dial-pad-button:nth-child(1)")).toBeVisible();
+  await page.locator("button.dial-pad-button:nth-child(1)").click();
+  await sleep(1000);
+
+  await expect(page.locator("button.dial-pad-button:nth-child(5)")).toBeVisible();
+  await page.locator("button.dial-pad-button:nth-child(5)").click();
+  await sleep(1000);
+
+  await expect(page.locator("button.dial-pad-button:nth-child(9)")).toBeVisible();
+  await page.locator("button.dial-pad-button:nth-child(9)").click();
+  await sleep(1000);
+
+  await page.getByRole('button', { name: /Submit/i }).click();
+  await sleep(1000);
+  await page.getByRole('button', { name: /Next Part/i }).click();
+
   await sleep(3000);
 });
