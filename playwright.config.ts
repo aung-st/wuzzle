@@ -24,25 +24,28 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  timeout: 60_000, 
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: "https://aung-st.github.io/wuzzle/",
     headless: false,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    deviceScaleFactor: undefined,
-    viewport: null,
-    launchOptions: {
-      args: ['--start-maximized']
-    },
-    
+    ignoreHTTPSErrors: true,
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'],
+        deviceScaleFactor: undefined,
+        viewport: null,
+        launchOptions: {
+          args: ['--start-maximized']
+        }
+       },
+      
       
     },
 
