@@ -52,7 +52,7 @@ test("walkthrough", async ({ page,baseURL }) => {
 
   await expect(page.locator("#answer")).toBeVisible();
   await page.locator("#answer").click();
-
+  await sleep(500);
   await page.getByRole('textbox').fill('One');
   await sleep(500);
   await page.getByRole('button', { name: /Submit/i }).click();
@@ -65,7 +65,7 @@ test("walkthrough", async ({ page,baseURL }) => {
   await page.locator("#dial-one").click();
   await page.locator("#dial-one").click();
   await page.locator("#dial-one").click();
-  await sleep(500);
+  await sleep(700);
 
 
   await expect(page.locator("#dial-two")).toBeVisible();
@@ -76,7 +76,7 @@ test("walkthrough", async ({ page,baseURL }) => {
   await page.locator("#dial-two").click();
   await page.locator("#dial-two").click();
   await page.locator("#dial-two").click();
-  await sleep(500);
+  await sleep(700);
 
   await expect(page.locator("#dial-three")).toBeVisible();
   await page.locator("#dial-three").click();
@@ -84,12 +84,12 @@ test("walkthrough", async ({ page,baseURL }) => {
   await page.locator("#dial-three").click();
   await page.locator("#dial-three").click();
   await page.locator("#dial-three").click();
-  await sleep(500);
+  await sleep(700);
 
   await expect(page.locator("#dial-four")).toBeVisible();
   await page.locator("#dial-four").click();
   await page.locator("#dial-four").click();
-  await sleep(500);
+  await sleep(700);
   await expect(page.locator("#next-button")).toBeVisible();
   await page.locator("#next-button").click();
 
